@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipElectric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electric"
+        android:textColor="@color/colorTextColor"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:chipBackgroundColor="@color/colorWhite"
+        app:chipIcon="@drawable/ic_electric"
+        app:chipStrokeColor="@color/colorGrey"
+        app:chipStrokeWidth="0.2dp"
+        app:layout_constraintEnd_toStartOf="@+id/chipGrass"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipGrass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grass"
+        app:iconStartPadding="2dp"
+        android:textColor="@color/colorTextColor"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/colorWhite"
+        app:chipIcon="@drawable/ic_leaf"
+        app:chipStrokeColor="@color/colorGrey"
+        app:chipStrokeWidth="0.2dp"
+        app:layout_constraintEnd_toStartOf="@+id/chipWater"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipElectric"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Water"
+        android:textColor="@color/colorTextColor"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/colorWhite"
+        app:chipIcon="@drawable/ic_water"
+        app:chipStrokeColor="@color/colorGrey"
+        app:chipStrokeWidth="0.2dp"
+        app:layout_constraintEnd_toStartOf="@+id/chipFire"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipGrass"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Fire"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorTextColor"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/colorWhite"
+        app:chipIcon="@drawable/ic_fire"
+        app:chipStrokeColor="@color/colorGrey"
+        app:chipStrokeWidth="0.2dp"
+        app:layout_constraintEnd_toStartOf="@+id/chipSpecial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipWater"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipSpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorTextColor"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/colorWhite"
+        app:chipIcon="@drawable/ic_special"
+        app:chipStrokeColor="@color/colorGrey"
+        app:chipStrokeWidth="0.2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipFire"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPokemon"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipElectric">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

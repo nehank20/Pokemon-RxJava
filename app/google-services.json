@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "753001380921",
+    "firebase_url": "https://pokemonapirx.firebaseio.com",
+    "project_id": "pokemonapirx",
+    "storage_bucket": "pokemonapirx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753001380921:android:949f1b77f576d322a9e1e8",
+        "android_client_info": {
+          "package_name": "com.poilkar.nehank.pokemonrx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753001380921-4l1tjhv0hn04sjdi4qnmakddes5de55h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBwqhfk6mi-kkMfTD_x0JExw0QZPOfRX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753001380921-4l1tjhv0hn04sjdi4qnmakddes5de55h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/searchPokemonFragment"
+        android:icon="@drawable/ic_search_pokemon"
+        android:title="Search Pokemon" />
+    <item
+        android:id="@+id/searchTrainerFragment"
+        android:icon="@drawable/ic_search_trainer"
+        android:title="Search Trainer" />
+
+    <item
+        android:id="@+id/bookmarkFragment"
+        android:icon="@drawable/ic_bookmark"
+        android:title="Bookmark" />
+
+</menu>
